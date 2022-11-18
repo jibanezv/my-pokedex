@@ -51,9 +51,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-Now, take all contents in "build" folder an put it them in "public" folder...
+Now, take all contents in `build` folder an put it them in `public` folder...
 ### `firebase deploy`
-Deploy to firebase web hosting all content in the "public" folder in the url: https://my-reactdex.web.app/
+Deploy to firebase web hosting all content in the `public` folder in the url: https://my-reactdex.web.app/
 
 ### `npm run build` fails to minify
 
