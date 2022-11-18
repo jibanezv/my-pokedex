@@ -26,7 +26,7 @@ const Searchbar = () => {
                 <input placeholder='Buscar pokémon...' onChange={onChange}></input>
             </div>
             <div className='button-search-bar-style'>
-                <button onClick={onClick}>Buscar</button>
+                <button onClick={onClick} className="search-button-style">Buscar</button>
             </div>
             <br />
             <br />
@@ -34,9 +34,9 @@ const Searchbar = () => {
                 {
                     pkmn &&
                     <div>
-                        <div>Nombre: {pkmn.name}</div>
-                        <div>Peso: {pkmn.weight}</div>
-                        <img src={pkmnImg} alt="pkmImage" />
+                        <p className='pkmn-data-style'>{pkmn.name === undefined ? "Sin resultados" : "Nombre: " + pkmn.name}</p>
+                        <p className='pkmn-data-style'>{pkmn.weight === undefined ? false : "Peso: " + pkmn.weight + " lbs"}</p>
+                        <img src={pkmnImg} alt="" />
                     </div>}
             </div>
         </div>

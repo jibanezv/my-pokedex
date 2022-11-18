@@ -11,6 +11,18 @@
   z-index: 0;
 }
 
+.search-button-style {
+  border-radius: 15px;
+  height: 33px;
+  width: 134px;
+  /* background-color: #202023;
+  color: white; */
+}
+
+.pkmn-data-style {
+  text-align: center;
+}
+
 .nav-style {
   background-color: #202023;
   display: flex;
