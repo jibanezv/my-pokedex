@@ -1,0 +1,48 @@
+.pkdex-logo-style {
+  width: 235px;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.react-logo-style {
+  width: 150px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 0;
+}
+
+.nav-style {
+  background-color: #202023;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+}
+
+.div-search-bar-style {
+  position: static;
+  display: block;
+  flex-direction: column;
+  margin: 22px;
+  text-align: center;
+}
+
+.button-search-bar-style {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .react-logo-style {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

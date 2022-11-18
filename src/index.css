@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background-color: #202023;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: pixels;
+  src: url("./fonts/pixels.ttf");
+}
+
+* {
+  font-family: pixels;
+  font-weight: bold;
+}
