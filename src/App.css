@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.body-pkdex {
+.single-search-div {
   background-color: rgb(203, 80, 47);
   height: max-content;
   display: flex;
@@ -11,9 +11,24 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  border: solid 8px #999999;
+  border-top: solid 4px #dedede;
+  border-bottom: solid 4px #dedede;
   border-radius: 50px;
   margin: 20px;
+}
+
+.single-search-bar {
+  height: 25px;
+  border: 4px solid gray;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.single-search-img {
+  width: 250px;
+  margin: 0px auto;
+  position: static;
+  display: block;
 }
 
 .App-link {
