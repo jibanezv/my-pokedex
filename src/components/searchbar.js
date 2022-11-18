@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/styles.css';
 import {searchPkmn} from '../services/api.js';
 
 const {useState} = React;
@@ -29,7 +30,7 @@ const Searchbar = () => {
 
     return (
         <div>
-            <h2>Busqueda única</h2>
+            <h3>Busqueda única</h3>
             <div className='div-search-bar-style'>
                 <input placeholder='nombre o id' onChange={onChange} className="single-search-bar"></input>
             </div>
