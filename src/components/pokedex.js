@@ -17,8 +17,10 @@ const Pokedex = (props) => {
 
     return (
         <div>
-            <div className="pkdx-container-style">
-                <h1>Pokédex</h1>
+            <div>
+                <h2 className='ttl-dex '>Pokédex</h2>
+            </div>
+            <div className='pkdx-container-pagination-style'>
                 <Pagination
                     page={page + 1}
                     totalPages={total}
@@ -26,9 +28,10 @@ const Pokedex = (props) => {
                     onRightClick={nextPage}
                 />
             </div>
+
             {
                 loading ? (
-                    <div>Cargando Pokemones...</div>
+                    <div className='ttl-waiting'>Cargando Pokemones...</div>
                 ) : (
                     <div className="pkdx-grid-style">
                         {pokemons.map((pokemon, idx) => {

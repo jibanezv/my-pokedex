@@ -17,6 +17,7 @@ const Pokemon = (props) => {
         e.preventDefault();
         updateFavoritePokemons(pokemon.name);
     }
+    
     const getType = async (idx) => {
         let res = await searchPkmn(idx);
         res = res.types.map((type, idx) => { return type.type.name });
@@ -37,7 +38,7 @@ const Pokemon = (props) => {
             </div>
             <div className="card-body">
                 <div className="card-top">
-                    <h3>{pokemon.name}</h3>
+                    <h2>{pokemon.name}</h2>
                     <div className="pokemon-id">#{pokemon.id}</div>
                 </div>
                 <div className="card-bottom">

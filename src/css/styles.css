@@ -35,8 +35,30 @@
 }
 
 /* Single Search */
+
+.img-search {
+  float: left;
+  right: 10px;
+}
+
+.info-search {
+  float: right;
+  padding-top: 93px;
+  padding-right: 70px;
+  padding-bottom: 25px;
+}
+
 .pkmn-data-style {
   text-align: center;
+  font-size: 13px;
+}
+
+.pkmn-stype-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 
 .div-search-bar-style {
@@ -80,7 +102,7 @@
 }
 
 .single-search-img {
-  width: 250px;
+  width: 500px;
   margin: 0px auto;
   position: static;
   display: block;
@@ -103,11 +125,42 @@
 }
 
 .pkdx-container-style {
+  background-color: rgb(203, 80, 47);
+  height: max-content;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  border-top: solid 4px #202023;
+  border-bottom: solid 4px #202023;
+  border-radius: 50px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.pkdx-container-pagination-style {
+  background-color: rgb(0 0 0 / 0%);
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-radius: 40px;
+  width: fit-content;
+  margin: 0px auto;
+  flex-direction: row;
+}
+
+.next-back-div {
+  background-color: transparent;
+  font-size: 47px;
+}
+
+.next-back-btn {
+  background-color: transparent;
+  border: 0px;
+  padding-bottom: 28px;
 }
 
 /* Pokemon */
@@ -150,7 +203,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(255, 0, 0, 1) 0%,
     rgb(195 195 195) 100%
   );
@@ -164,7 +217,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(255, 0, 0, 1) 0%,
     rgba(0, 92, 3, 1) 100%
   );
@@ -178,7 +231,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(255, 0, 0, 1) 0%,
     rgb(89, 0, 255) 100%
   );
@@ -192,7 +245,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(255, 0, 0, 1) 0%,
     rgb(25, 25, 25) 100%
   );
@@ -206,7 +259,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(255, 0, 0, 1) 0%,
     rgb(59 69 213) 100%
   );
@@ -220,7 +273,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(255, 0, 0, 1) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -233,7 +286,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgba(255, 0, 0, 1) 0%, #7a1b4c 100%);
 }
 
 .fire-steel {
@@ -243,7 +296,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, #354d6f 100%);
+  background: linear-gradient(170deg, rgba(255, 0, 0, 1) 0%, #354d6f 100%);
 }
 
 .fire-ground {
@@ -253,7 +306,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgba(255, 0, 0, 1) 0%, #46411b 100%);
 }
 
 .fire-fighting {
@@ -263,7 +316,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, #666 100%);
+  background: linear-gradient(170deg, rgba(255, 0, 0, 1) 0%, #666 100%);
 }
 
 .fighting-psychic {
@@ -273,7 +326,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #666 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, #666 0%, #7a1b4c 100%);
 }
 
 .fighting-water {
@@ -283,7 +336,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #666 0%, rgb(59 69 213) 100%);
+  background: linear-gradient(170deg, #666 0%, rgb(59 69 213) 100%);
 }
 
 .fighting-poison {
@@ -293,7 +346,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #666 0%, rgba(92, 16, 98, 1) 100%);
+  background: linear-gradient(170deg, #666 0%, rgba(92, 16, 98, 1) 100%);
 }
 
 .fighting-dark {
@@ -303,7 +356,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #666 0%, rgb(25, 25, 25) 100%);
+  background: linear-gradient(170deg, #666 0%, rgb(25, 25, 25) 100%);
 }
 
 .fighting-ice {
@@ -313,7 +366,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #666 0%, #a7e4ff 100%);
+  background: linear-gradient(170deg, #666 0%, #a7e4ff 100%);
 }
 
 .fighting-flying {
@@ -323,7 +376,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #666 0%, rgb(154, 194, 225) 100%);
+  background: linear-gradient(170deg, #666 0%, rgb(154, 194, 225) 100%);
 }
 
 .fighting-steel {
@@ -333,7 +386,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #666 0%, #354d6f 100%);
+  background: linear-gradient(170deg, #666 0%, #354d6f 100%);
 }
 
 .fighting-ghost {
@@ -343,7 +396,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #666 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, #666 0%, rgb(59, 25, 54) 100%);
 }
 
 .fire-rock {
@@ -354,7 +407,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(255, 0, 0, 1) 0%,
     rgb(99, 99, 99) 100%
   );
@@ -367,7 +420,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, rgb(255, 0, 0) 100%);
 }
 
 .rock-electric {
@@ -377,7 +430,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, #d5b900 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, #d5b900 100%);
 }
 
 .fire-ghost {
@@ -388,7 +441,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(255, 0, 0, 1) 0%,
     rgb(59, 25, 54) 100%
   );
@@ -411,7 +464,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, rgb(19, 186, 0) 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, rgb(19, 186, 0) 100%);
 }
 
 .water-dark {
@@ -421,7 +474,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, rgb(25, 25, 25) 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, rgb(25, 25, 25) 100%);
 }
 
 .water-fighting {
@@ -431,7 +484,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, #666 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, #666 100%);
 }
 
 .water-electric {
@@ -441,7 +494,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, #d5b900 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, #d5b900 100%);
 }
 
 .water-poison {
@@ -452,7 +505,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(59 69 213) 0%,
     rgba(92, 16, 98, 1) 100%
   );
@@ -465,7 +518,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, #46411b 100%);
 }
 
 .dark {
@@ -486,7 +539,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(25, 25, 25) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -500,7 +553,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(25, 25, 25) 0%,
     rgba(92, 16, 98, 1) 100%
   );
@@ -513,7 +566,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, rgb(19, 186, 0) 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, rgb(19, 186, 0) 100%);
 }
 
 .dark-fairy {
@@ -523,7 +576,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, #d367bc 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, #d367bc 100%);
 }
 
 .dark-normal {
@@ -533,7 +586,11 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, rgb(195 195 195) 100%);
+  background: linear-gradient(
+    170deg,
+    rgb(25, 25, 25) 0%,
+    rgb(195 195 195) 100%
+  );
 }
 
 .dark-psychic {
@@ -543,7 +600,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, #7a1b4c 100%);
 }
 
 .dark-steel {
@@ -553,7 +610,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, #354d6f 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, #354d6f 100%);
 }
 
 .dark-dragon {
@@ -563,7 +620,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, rgb(89, 0, 255) 100%);
 }
 
 .dark-fighting {
@@ -573,7 +630,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, #666 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, #666 100%);
 }
 
 .dark-ghost {
@@ -583,7 +640,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, rgb(59, 25, 54) 100%);
 }
 
 .ghost-dark {
@@ -593,7 +650,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59, 25, 54) 0%, rgb(25, 25, 25) 100%);
+  background: linear-gradient(170deg, rgb(59, 25, 54) 0%, rgb(25, 25, 25) 100%);
 }
 
 .ghost-fairy {
@@ -603,7 +660,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59, 25, 54) 0%, #d367bc 100%);
+  background: linear-gradient(170deg, rgb(59, 25, 54) 0%, #d367bc 100%);
 }
 
 .ghost-ground {
@@ -613,7 +670,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59, 25, 54) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgb(59, 25, 54) 0%, #46411b 100%);
 }
 
 .ghost-dragon {
@@ -623,7 +680,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59, 25, 54) 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, rgb(59, 25, 54) 0%, rgb(89, 0, 255) 100%);
 }
 
 .dark-fire {
@@ -633,7 +690,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, rgb(255, 0, 0) 100%);
 }
 
 .ghost {
@@ -653,7 +710,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(0, 92, 3, 1) 0%, #354d6f 100%);
+  background: linear-gradient(170deg, rgba(0, 92, 3, 1) 0%, #354d6f 100%);
 }
 
 .bug-fairy {
@@ -663,7 +720,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(0, 92, 3, 1) 0%, #d367bc 100%);
+  background: linear-gradient(170deg, rgba(0, 92, 3, 1) 0%, #d367bc 100%);
 }
 
 .bug-fire {
@@ -673,7 +730,11 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(0, 92, 3, 1) 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(
+    170deg,
+    rgba(0, 92, 3, 1) 0%,
+    rgb(255, 0, 0) 100%
+  );
 }
 
 .bug-electric {
@@ -683,7 +744,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(0, 92, 3, 1) 0%, #d5b900 100%);
+  background: linear-gradient(170deg, rgba(0, 92, 3, 1) 0%, #d5b900 100%);
 }
 
 .bug-water {
@@ -693,7 +754,11 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(0, 92, 3, 1) 0%, rgb(59 69 213) 100%);
+  background: linear-gradient(
+    170deg,
+    rgba(0, 92, 3, 1) 0%,
+    rgb(59 69 213) 100%
+  );
 }
 
 .water-bug {
@@ -703,7 +768,11 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, rgba(0, 92, 3, 1) 100%);
+  background: linear-gradient(
+    170deg,
+    rgb(59 69 213) 0%,
+    rgba(0, 92, 3, 1) 100%
+  );
 }
 
 .bug-rock {
@@ -714,7 +783,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(0, 92, 3, 1) 0%,
     rgb(99, 99, 99) 100%
   );
@@ -727,7 +796,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(0, 92, 3, 1) 0%, #666 100%);
+  background: linear-gradient(170deg, rgba(0, 92, 3, 1) 0%, #666 100%);
 }
 
 .dark-ice {
@@ -737,7 +806,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, #a7e4ff 100%);
+  background: linear-gradient(170deg, rgb(25, 25, 25) 0%, #a7e4ff 100%);
 }
 
 .ground-flying {
@@ -747,7 +816,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, rgb(154, 194, 225) 100%);
+  background: linear-gradient(170deg, #46411b 0%, rgb(154, 194, 225) 100%);
 }
 
 .ground-fire {
@@ -757,7 +826,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(170deg, #46411b 0%, rgb(255, 0, 0) 100%);
 }
 
 .ground-normal {
@@ -767,7 +836,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, rgb(195 195 195) 100%);
+  background: linear-gradient(170deg, #46411b 0%, rgb(195 195 195) 100%);
 }
 
 .ground-electric {
@@ -777,7 +846,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, #d5b900 100%);
+  background: linear-gradient(170deg, #46411b 0%, #d5b900 100%);
 }
 
 .ground-ghost {
@@ -787,7 +856,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, #46411b 0%, rgb(59, 25, 54) 100%);
 }
 
 .psychic-ghost {
@@ -797,7 +866,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, rgb(59, 25, 54) 100%);
 }
 
 .psychic-dragon {
@@ -807,7 +876,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, rgb(89, 0, 255) 100%);
 }
 
 .psychic-ice {
@@ -817,7 +886,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, #a7e4ff 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, #a7e4ff 100%);
 }
 
 .psychic-dark {
@@ -827,7 +896,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, rgb(25, 25, 25) 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, rgb(25, 25, 25) 100%);
 }
 
 .steel-ground {
@@ -837,7 +906,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #354d6f 0%, #46411b 100%);
+  background: linear-gradient(170deg, #354d6f 0%, #46411b 100%);
 }
 
 .steel-ghost {
@@ -847,7 +916,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #354d6f 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, #354d6f 0%, rgb(59, 25, 54) 100%);
 }
 
 .steel-fighting {
@@ -857,7 +926,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #354d6f 0%, #666 100%);
+  background: linear-gradient(170deg, #354d6f 0%, #666 100%);
 }
 
 .steel-dragon {
@@ -867,7 +936,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #354d6f 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, #354d6f 0%, rgb(89, 0, 255) 100%);
 }
 
 .steel-psychic {
@@ -877,7 +946,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #354d6f 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, #354d6f 0%, #7a1b4c 100%);
 }
 
 .steel {
@@ -897,7 +966,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #354d6f 0%, rgb(99, 99, 99) 100%);
+  background: linear-gradient(170deg, #354d6f 0%, rgb(99, 99, 99) 100%);
 }
 
 .rock-steel {
@@ -907,7 +976,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, #354d6f 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, #354d6f 100%);
 }
 
 .rock-poison {
@@ -918,7 +987,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(99, 99, 99) 0%,
     rgba(92, 16, 98, 1) 100%
   );
@@ -931,7 +1000,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, #666 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, #666 100%);
 }
 
 .steel-fairy {
@@ -941,7 +1010,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #354d6f 0%, #d367bc 100%);
+  background: linear-gradient(170deg, #354d6f 0%, #d367bc 100%);
 }
 
 .steel-flying {
@@ -951,7 +1020,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #354d6f 0%, rgb(154, 194, 225) 100%);
+  background: linear-gradient(170deg, #354d6f 0%, rgb(154, 194, 225) 100%);
 }
 
 .rock {
@@ -972,7 +1041,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(99, 99, 99) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -985,7 +1054,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, #7a1b4c 100%);
 }
 
 .rock-grass {
@@ -995,7 +1064,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, rgb(19, 186, 0) 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, rgb(19, 186, 0) 100%);
 }
 
 .rock-bug {
@@ -1006,7 +1075,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(99, 99, 99) 0%,
     rgba(0, 92, 3, 1) 100%
   );
@@ -1029,7 +1098,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, #46411b 0%, #7a1b4c 100%);
 }
 
 .ice-flying {
@@ -1039,7 +1108,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, rgb(154, 194, 225) 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, rgb(154, 194, 225) 100%);
 }
 
 .ice-rock {
@@ -1049,7 +1118,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, rgb(99, 99, 99) 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, rgb(99, 99, 99) 100%);
 }
 
 .ice-fire {
@@ -1059,7 +1128,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, rgb(255, 0, 0) 100%);
 }
 
 .ice-bug {
@@ -1069,7 +1138,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, rgba(0, 92, 3, 1) 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, rgba(0, 92, 3, 1) 100%);
 }
 
 .ice-ghost {
@@ -1079,7 +1148,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, rgb(59, 25, 54) 100%);
 }
 
 .ice-ground {
@@ -1089,7 +1158,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, #46411b 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, #46411b 100%);
 }
 
 .ice-water {
@@ -1099,7 +1168,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, rgb(59 69 213) 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, rgb(59 69 213) 100%);
 }
 
 .grass-flying {
@@ -1110,7 +1179,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(19, 186, 0) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -1123,7 +1192,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, rgb(89, 0, 255) 100%);
 }
 
 .grass-ghost {
@@ -1133,7 +1202,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, rgb(59, 25, 54) 100%);
 }
 
 .grass-steel {
@@ -1143,7 +1212,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, #354d6f 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, #354d6f 100%);
 }
 
 .grass-fighting {
@@ -1153,7 +1222,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, #666 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, #666 100%);
 }
 
 .electric-flying {
@@ -1163,7 +1232,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgb(154, 194, 225) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgb(154, 194, 225) 100%);
 }
 
 .electric-psychic {
@@ -1173,7 +1242,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, #d5b900 0%, #7a1b4c 100%);
 }
 
 .electric-fire {
@@ -1183,7 +1252,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgb(255, 0, 0) 100%);
 }
 
 .electric-water {
@@ -1193,7 +1262,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgb(59 69 213) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgb(59 69 213) 100%);
 }
 
 .electric-grass {
@@ -1203,7 +1272,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgb(19, 186, 0) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgb(19, 186, 0) 100%);
 }
 
 .electric-dragon {
@@ -1213,7 +1282,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgb(89, 0, 255) 100%);
 }
 
 .electric-ice {
@@ -1223,7 +1292,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, #a7e4ff 100%);
+  background: linear-gradient(170deg, #d5b900 0%, #a7e4ff 100%);
 }
 
 .electric-poison {
@@ -1233,7 +1302,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgba(92, 16, 98, 1) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgba(92, 16, 98, 1) 100%);
 }
 
 .electric-fairy {
@@ -1243,7 +1312,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, #d367bc 100%);
+  background: linear-gradient(170deg, #d5b900 0%, #d367bc 100%);
 }
 
 .electric-normal {
@@ -1253,7 +1322,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgb(195 195 195) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgb(195 195 195) 100%);
 }
 
 .electric-ghost {
@@ -1263,7 +1332,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgb(59, 25, 54) 100%);
 }
 
 .rock-water {
@@ -1273,7 +1342,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, rgb(59 69 213) 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, rgb(59 69 213) 100%);
 }
 
 .rock-fairy {
@@ -1283,7 +1352,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, #d367bc 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, #d367bc 100%);
 }
 
 .rock-ice {
@@ -1293,7 +1362,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, #a7e4ff 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, #a7e4ff 100%);
 }
 
 .rock-dragon {
@@ -1303,7 +1372,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, rgb(89, 0, 255) 100%);
 }
 
 .water-rock {
@@ -1313,7 +1382,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, rgb(99, 99, 99) 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, rgb(99, 99, 99) 100%);
 }
 
 .water-dragon {
@@ -1323,7 +1392,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, rgb(89, 0, 255) 100%);
 }
 
 .rock-ground {
@@ -1333,7 +1402,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, #46411b 100%);
 }
 
 .rock-dark {
@@ -1343,7 +1412,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, rgb(25, 25, 25) 100%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 0%, rgb(25, 25, 25) 100%);
 }
 
 .ground-rock {
@@ -1353,7 +1422,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, rgb(99, 99, 99) 100%);
+  background: linear-gradient(170deg, #46411b 0%, rgb(99, 99, 99) 100%);
 }
 
 .ground-dragon {
@@ -1363,7 +1432,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(170deg, #46411b 0%, rgb(89, 0, 255) 100%);
 }
 
 .ground-steel {
@@ -1373,7 +1442,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, #354d6f 100%);
+  background: linear-gradient(170deg, #46411b 0%, #354d6f 100%);
 }
 
 .ground-dark {
@@ -1383,7 +1452,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #46411b 0%, rgb(25, 25, 25) 100%);
+  background: linear-gradient(170deg, #46411b 0%, rgb(25, 25, 25) 100%);
 }
 
 .dragon-ground {
@@ -1393,7 +1462,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(89, 0, 255) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgb(89, 0, 255) 0%, #46411b 100%);
 }
 
 .dragon-ghost {
@@ -1403,7 +1472,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(89, 0, 255) 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, rgb(89, 0, 255) 0%, rgb(59, 25, 54) 100%);
 }
 
 .dragon-fairy {
@@ -1413,7 +1482,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(89, 0, 255) 0%, #d367bc 100%);
+  background: linear-gradient(170deg, rgb(89, 0, 255) 0%, #d367bc 100%);
 }
 
 .dragon-fighting {
@@ -1423,7 +1492,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(89, 0, 255) 0%, #666 100%);
+  background: linear-gradient(170deg, rgb(89, 0, 255) 0%, #666 100%);
 }
 
 .dragon-fire {
@@ -1433,7 +1502,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(89, 0, 255) 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(170deg, rgb(89, 0, 255) 0%, rgb(255, 0, 0) 100%);
 }
 
 .dragon-electric {
@@ -1443,7 +1512,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(89, 0, 255) 0%, #d5b900 100%);
+  background: linear-gradient(170deg, rgb(89, 0, 255) 0%, #d5b900 100%);
 }
 
 .dragon-ice {
@@ -1453,7 +1522,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(89, 0, 255) 0%, #a7e4ff 100%);
+  background: linear-gradient(170deg, rgb(89, 0, 255) 0%, #a7e4ff 100%);
 }
 
 .water-psychic {
@@ -1463,7 +1532,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, #7a1b4c 100%);
 }
 
 .water-flying {
@@ -1474,7 +1543,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(59 69 213) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -1487,7 +1556,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, #354d6f 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, #354d6f 100%);
 }
 
 .psychic-normal {
@@ -1497,7 +1566,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, rgb(195 195 195) 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, rgb(195 195 195) 100%);
 }
 
 .psychic-fairy {
@@ -1507,7 +1576,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, #d367bc 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, #d367bc 100%);
 }
 
 .psychic-fire {
@@ -1517,7 +1586,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, rgb(255, 0, 0) 100%);
 }
 
 .grass-psychic {
@@ -1527,7 +1596,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, #7a1b4c 100%);
 }
 
 .grass-fairy {
@@ -1537,7 +1606,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, #d367bc 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, #d367bc 100%);
 }
 
 .ice-psychic {
@@ -1547,7 +1616,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, #7a1b4c 100%);
 }
 
 .ice-fairy {
@@ -1557,7 +1626,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, #d367bc 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, #d367bc 100%);
 }
 
 .ice-steel {
@@ -1567,7 +1636,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #a7e4ff 0%, #354d6f 100%);
+  background: linear-gradient(170deg, #a7e4ff 0%, #354d6f 100%);
 }
 
 .electric-steel {
@@ -1577,7 +1646,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, #354d6f 100%);
+  background: linear-gradient(170deg, #d5b900 0%, #354d6f 100%);
 }
 
 .electric-dark {
@@ -1587,7 +1656,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #d5b900 0%, rgb(25, 25, 25) 100%);
+  background: linear-gradient(170deg, #d5b900 0%, rgb(25, 25, 25) 100%);
 }
 
 .water-ice {
@@ -1597,7 +1666,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, #a7e4ff 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, #a7e4ff 100%);
 }
 
 .dragon {
@@ -1618,7 +1687,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(89, 0, 255) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -1631,7 +1700,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(89, 0, 255) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgb(89, 0, 255) 0%, #7a1b4c 100%);
 }
 
 .ghost-poison {
@@ -1642,7 +1711,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(59, 25, 54) 0%,
     rgb(111, 30, 117) 100%
   );
@@ -1655,7 +1724,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59, 25, 54) 0%, rgb(19, 186, 0) 100%);
+  background: linear-gradient(170deg, rgb(59, 25, 54) 0%, rgb(19, 186, 0) 100%);
 }
 
 .ghost-fire {
@@ -1665,7 +1734,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59, 25, 54) 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(170deg, rgb(59, 25, 54) 0%, rgb(255, 0, 0) 100%);
 }
 
 .ghost-flying {
@@ -1676,7 +1745,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(59, 25, 54) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -1691,7 +1760,7 @@
   padding: 10px;
   background: rgb(0, 92, 3);
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(0, 92, 3, 1) 0%,
     rgba(0, 92, 3, 1) 100%
   );
@@ -1705,7 +1774,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(0, 92, 3, 1) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -1719,7 +1788,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(0, 92, 3, 1) 0%,
     rgba(92, 16, 98, 1) 100%
   );
@@ -1732,7 +1801,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(0, 92, 3, 1) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgba(0, 92, 3, 1) 0%, #46411b 100%);
 }
 
 .bug-ghost {
@@ -1743,7 +1812,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(0, 92, 3, 1) 0%,
     rgb(59, 25, 54) 100%
   );
@@ -1757,7 +1826,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(0, 92, 3, 1) 0%,
     rgb(19, 186, 0) 100%
   );
@@ -1770,7 +1839,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(0, 92, 3, 1) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgba(0, 92, 3, 1) 0%, #7a1b4c 100%);
 }
 
 .grass-poison {
@@ -1782,7 +1851,7 @@
   padding: 10px;
   background: rgb(19, 186, 0);
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(19, 186, 0) 0%,
     rgba(92, 16, 98, 1) 100%
   );
@@ -1796,7 +1865,7 @@
   width: auto;
   padding: 10px;
   background: rgb(19, 186, 0);
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, #46411b 100%);
 }
 
 .grass-dark {
@@ -1807,7 +1876,7 @@
   width: auto;
   padding: 10px;
   background: rgb(19, 186, 0);
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, rgb(25, 25, 25) 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, rgb(25, 25, 25) 100%);
 }
 
 .grass-ice {
@@ -1818,7 +1887,7 @@
   width: auto;
   padding: 10px;
   background: rgb(19, 186, 0);
-  background: linear-gradient(90deg, rgb(19, 186, 0) 0%, #a7e4ff 100%);
+  background: linear-gradient(170deg, rgb(19, 186, 0) 0%, #a7e4ff 100%);
 }
 
 .flying {
@@ -1849,7 +1918,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(154, 194, 225) 0%,
     rgb(89, 0, 255) 100%
   );
@@ -1863,7 +1932,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(154, 194, 225) 0%,
     rgb(59 69 213) 100%
   );
@@ -1876,7 +1945,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(154, 194, 225) 0%, #354d6f 100%);
+  background: linear-gradient(170deg, rgb(154, 194, 225) 0%, #354d6f 100%);
 }
 
 .normal-flying {
@@ -1887,7 +1956,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgb(195 195 195) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -1900,7 +1969,11 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(195 195 195) 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(
+    170deg,
+    rgb(195 195 195) 0%,
+    rgb(59, 25, 54) 100%
+  );
 }
 
 .normal-dragon {
@@ -1910,7 +1983,11 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(195 195 195) 0%, rgb(89, 0, 255) 100%);
+  background: linear-gradient(
+    170deg,
+    rgb(195 195 195) 0%,
+    rgb(89, 0, 255) 100%
+  );
 }
 
 .normal-ground {
@@ -1920,7 +1997,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(195 195 195) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgb(195 195 195) 0%, #46411b 100%);
 }
 
 .normal-grass {
@@ -1930,7 +2007,11 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(195 195 195) 0%, rgb(19, 186, 0) 100%);
+  background: linear-gradient(
+    170deg,
+    rgb(195 195 195) 0%,
+    rgb(19, 186, 0) 100%
+  );
 }
 
 .normal-water {
@@ -1940,7 +2021,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(195 195 195) 0%, rgb(59 69 213) 100%);
+  background: linear-gradient(170deg, rgb(195 195 195) 0%, rgb(59 69 213) 100%);
 }
 
 .normal-psychic {
@@ -1950,7 +2031,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(195 195 195) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgb(195 195 195) 0%, #7a1b4c 100%);
 }
 
 .poison {
@@ -1990,7 +2071,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(92, 16, 98, 1) 0%, #46411b 100%);
+  background: linear-gradient(170deg, rgba(92, 16, 98, 1) 0%, #46411b 100%);
 }
 
 .poison-psychic {
@@ -2000,7 +2081,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(92, 16, 98, 1) 0%, #7a1b4c 100%);
+  background: linear-gradient(170deg, rgba(92, 16, 98, 1) 0%, #7a1b4c 100%);
 }
 
 .poison-fairy {
@@ -2010,7 +2091,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(92, 16, 98, 1) 0%, #d367bc 100%);
+  background: linear-gradient(170deg, rgba(92, 16, 98, 1) 0%, #d367bc 100%);
 }
 
 .poison-fire {
@@ -2021,7 +2102,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(92, 16, 98, 1) 0%,
     rgb(255, 0, 0) 100%
   );
@@ -2035,7 +2116,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(92, 16, 98, 1) 0%,
     rgb(59 69 213) 100%
   );
@@ -2049,7 +2130,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(92, 16, 98, 1) 0%,
     rgb(89, 0, 255) 100%
   );
@@ -2063,7 +2144,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(92, 16, 98, 1) 0%,
     rgba(0, 92, 3, 1) 100%
   );
@@ -2076,7 +2157,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgba(92, 16, 98, 1) 0%, #666 100%);
+  background: linear-gradient(170deg, rgba(92, 16, 98, 1) 0%, #666 100%);
 }
 
 .poison-dark {
@@ -2087,7 +2168,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(92, 16, 98, 1) 0%,
     rgb(25, 25, 25) 100%
   );
@@ -2110,7 +2191,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(195 195 195) 0%, #ff60dd 100%);
+  background: linear-gradient(170deg, rgb(195 195 195) 0%, #ff60dd 100%);
 }
 
 .normal-fighting {
@@ -2120,7 +2201,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(195 195 195) 0%, #666 100%);
+  background: linear-gradient(170deg, rgb(195 195 195) 0%, #666 100%);
 }
 
 .water-fairy {
@@ -2130,7 +2211,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, #ff60dd 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, #ff60dd 100%);
 }
 
 .water-ghost {
@@ -2140,7 +2221,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, rgb(59, 25, 54) 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, rgb(59, 25, 54) 100%);
 }
 
 .water-steel {
@@ -2150,7 +2231,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, rgb(59 69 213) 0%, #354d6f 100%);
+  background: linear-gradient(170deg, rgb(59 69 213) 0%, #354d6f 100%);
 }
 
 .fairy-flying {
@@ -2160,7 +2241,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #ff60dd 0%, rgb(154, 194, 225) 100%);
+  background: linear-gradient(170deg, #ff60dd 0%, rgb(154, 194, 225) 100%);
 }
 
 .fairy-steel {
@@ -2170,7 +2251,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #ff60dd 0%, #354d6f 100%);
+  background: linear-gradient(170deg, #ff60dd 0%, #354d6f 100%);
 }
 
 .psychic-flying {
@@ -2180,7 +2261,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, rgb(154, 194, 225) 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, rgb(154, 194, 225) 100%);
 }
 
 .psychic-fighting {
@@ -2190,7 +2271,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, #666 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, #666 100%);
 }
 
 .psychic-grass {
@@ -2200,7 +2281,7 @@
   margin: 15px;
   width: auto;
   padding: 10px;
-  background: linear-gradient(90deg, #7a1b4c 0%, rgb(19, 186, 0) 100%);
+  background: linear-gradient(170deg, #7a1b4c 0%, rgb(19, 186, 0) 100%);
 }
 
 .poison-flying {
@@ -2211,7 +2292,7 @@
   width: auto;
   padding: 10px;
   background: linear-gradient(
-    90deg,
+    170deg,
     rgba(92, 16, 98, 1) 0%,
     rgb(154, 194, 225) 100%
   );
@@ -2237,10 +2318,8 @@
   background-color: #7a1b4c;
 }
 
-.pokemon-image {
-  width: 90px;
-  height: 90px;
-  padding: 15px;
+.pokemon-img {
+  height: 110px;
 }
 
 .div-pokemon-img {
@@ -2249,9 +2328,9 @@
 
 .card-body {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
+  flex: 1 1;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .card-top {
@@ -2261,16 +2340,46 @@
   align-items: center;
 }
 
-.card-top h3 {
+.card-top h2 {
   text-transform: capitalize;
-  /* border: solid 2px #565656;
-  background-color: #202124;
-  height: 17px;
-  padding-top: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 20px; */
 }
+
+.ttl-busqueda {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.ttl-dex {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+}
+
+.ttl-waiting {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  margin: 0px auto;
+  padding: 50px;
+}
+
+.show-info-search {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 0px 10px;
+}
+
+.data-searched {
+  font-size: 10px;
+}
+
+/* .container-searched {
+  width: 100% !important;
+} */
 
 .card-bottom {
   display: flex;
@@ -2321,5 +2430,37 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1135px) {
+  .pkdx-grid-style {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 890px) {
+  .info-search {
+    margin: 0px auto;
+    float: none;
+    padding: 0px;
+  }
+
+  .img-search {
+    float: none;
+    right: auto;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .pkdx-grid-style {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 0px 10px;
   }
 }
