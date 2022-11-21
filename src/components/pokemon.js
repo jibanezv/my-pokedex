@@ -32,7 +32,7 @@ const Pokemon = (props) => {
     getType(pokemon.id);
 
     return (
-        <div className={typesPkmn}>
+        <div className={typesPkmn} id="pkmn-pkdx-card">
             <div className="div-pokemon-img">
                 <img className="pokemon-img" src={pokemon.sprites.front_default} alt="" />
             </div>

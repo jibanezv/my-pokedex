@@ -33,7 +33,7 @@ const Pokedex = (props) => {
                 loading ? (
                     <div className='ttl-waiting'>Cargando Pokemones...</div>
                 ) : (
-                    <div className="pkdx-grid-style">
+                    <div className="pkdx-grid-style" >
                         {pokemons.map((pokemon, idx) => {
                             return (
                                 <Pokemon pokemon={pokemon} key={pokemon.name} />
