@@ -17,8 +17,8 @@ const Searchbar = () => {
         if (search === "0") {
             alert("La busqueda por ID debe ser mayor a 0.");
         }
-        else if (parseInt(search) > 905) {
-            alert("La busqueda por ID debe ser menor a 905...");
+        else if (parseInt(search) > 891) {
+            alert("La busqueda por ID debe ser menor a 891...");
         }
         else {
             console.log("Buscando... " + search)
@@ -45,13 +45,12 @@ const Searchbar = () => {
                 <button onClick={onClick} className="search-button-style">Buscar</button>
             </div>
             <br />
-            <br />
             <div>
                 {
                     pkmn &&
-                    <div>
+                    <div id="search-container" className={pkmn.types === undefined ? false : pkmn.types[1] ? pkmn.types[0].type.name + "-" + pkmn.types[1].type.name : pkmn.types[0].type.name}>
                         <div className='img-search'>
-                            <img src={pkmnImg} alt="" className="single-search-img" />
+                            <img src={'http://play.pokemonshowdown.com/sprites/xyani/' + pkmn.name + '.gif'} alt="" className="single-search-img" />
                         </div>
                         <div className='info-search'>
                             <p className='pkmn-data-style'>{pkmn.name === undefined ? false : "NAME: " + pkmn.name.toUpperCase()}</p>
@@ -66,6 +65,7 @@ const Searchbar = () => {
                     </div>
                 }
             </div>
+            <br />
         </div>
     );
 };

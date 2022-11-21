@@ -80,7 +80,7 @@
 }
 
 .single-search-div {
-  background-color: rgb(203, 80, 47);
+  background-color: transparent;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -102,10 +102,11 @@
 }
 
 .single-search-img {
-  width: 500px;
-  margin: 0px auto;
+  width: 300px;
+  padding: 40px;
   position: static;
   display: block;
+  image-rendering: pixelated;
 }
 
 .pkdx-single-container-style {
@@ -2442,7 +2443,7 @@
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 900px) {
   .info-search {
     margin: 0px auto;
     float: none;
@@ -2453,6 +2454,15 @@
     float: none;
     right: auto;
     margin: 0px auto;
+  }
+
+  #search-container {
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px #000;
+    display: grid;
+    margin: 15px;
+    padding: 10px;
+    width: auto;
   }
 }
 
