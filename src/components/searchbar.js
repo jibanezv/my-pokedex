@@ -54,6 +54,7 @@ const Searchbar = () => {
                         </div>
                         <div className='info-search'>
                             <p className='pkmn-data-style'>{pkmn.name === undefined ? false : "NAME: " + pkmn.name.toUpperCase()}</p>
+                            <p className='pkmn-data-style'>{pkmn.id === undefined ? false : "ID: " + pkmn.id}</p>
                             <p className='pkmn-data-style'>{pkmn.types === undefined ? false : pkmn.types[1] ? "TYPES: " + pkmn.types[0].type.name + "/" + pkmn.types[1].type.name : "TYPE: " + pkmn.types[0].type.name}</p>
                             <p className='pkmn-data-style'>{pkmn.stats ? "HP: " + pkmn.stats[0].base_stat : false}</p>
                             <p className='pkmn-data-style'>{pkmn.stats ? "ATK: " + pkmn.stats[1].base_stat : false}</p>
