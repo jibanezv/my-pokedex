@@ -50,7 +50,7 @@ const Searchbar = () => {
                     pkmn &&
                     <div id="search-container" className={pkmn.types === undefined ? false : pkmn.types[1] ? pkmn.types[0].type.name + "-" + pkmn.types[1].type.name : pkmn.types[0].type.name}>
                         <div className='img-search'>
-                            <img src={'http://play.pokemonshowdown.com/sprites/xyani/' + pkmn.name + '.gif'} alt="" className="single-search-img" />
+                            <img src={'http://play.pokemonshowdown.com/sprites/xyani/' + pkmn.name.replace("-", "") + '.gif'} alt="" className="single-search-img" />
                         </div>
                         <div className='info-search'>
                             <p className='pkmn-data-style'>{pkmn.name === undefined ? false : "NAME: " + pkmn.name.toUpperCase()}</p>
